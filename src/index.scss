@@ -1,0 +1,35 @@
+@use "styles/consts";
+
+:root {
+	font-family: consts.$ui-font-primary;
+	font-weight: 300;
+	font-size: consts.$ui-font-sm;
+
+	color-scheme: light dark;
+	color: consts.$secondaryDark;
+	background-color: consts.$primaryLight;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}

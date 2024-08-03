@@ -1,0 +1,48 @@
+// color palette
+$primary: #134EBF;
+$primaryLight: #FAFAF7;
+$secondaryDark: #585755;
+$secondaryLight: #F1F1F1;
+$secondary: #BECCE7;
+$tetriaryDark: #A8A7A6;
+$tetriaryLight: #FEFDFC;
+$tetriary: #F7F7F7;
+
+
+// z-index
+$ui-index-1: 1; // Layout layer 1
+$ui-index-2: 2; // Layout layer 2
+$ui-index-3: 3; // For menu
+$ui-index-4: 4; // For sidebars
+$ui-index-5: 5; // For modals
+$ui-index-6: 6; // For an emergency situations :)
+
+
+// spaces
+$ui-step: 4px;
+
+$directions: (
+	top,
+	bottom,
+	left,
+	right
+);
+
+@mixin ui-space($direction, $size) {
+	@each $var in $directions {
+		@if($direction == $var) {
+			margin-#{$var}: $ui-step * $size;
+		}
+	}
+}
+
+
+// fonts
+$ui-font-primary: "Montserrat", sans-serif;
+$ui-font-secondary: "Inter", sans-serif;
+
+$ui-font-xs: $ui-step * 3;
+$ui-font-sm: $ui-step * 4;
+$ui-font-md: $ui-step * 5;
+$ui-font-lg: $ui-step * 6;
+$ui-font-xl: $ui-step * 14;

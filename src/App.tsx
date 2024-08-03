@@ -1,11 +1,11 @@
 import { Fragment } from 'react/jsx-runtime'
-import './App.css'
+import styles from "./App.module.scss"
 
-function App () {
-  
-  return <Fragment>
-    
-  </Fragment>
+const App = () => {
+
+	return <main className={styles.container}>
+		
+	</main>
 }
 
 export default App
